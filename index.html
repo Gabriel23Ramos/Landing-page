@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Gabriel Ramos — Aulas de Inglês</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Nunito:wght@800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAV BAR -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <span class="nav-brand-sup">Teacher</span>
+      <span class="nav-brand-name">Gabriel <em>Ramos</em></span>
+    </div>
+    <div class="nav-links">
+      <a href="#como">Como funciona</a>
+      <a href="#quiz">Quiz de nível</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato" class="nav-cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.108.549 4.089 1.508 5.814L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 01-5.012-1.374l-.36-.214-3.762.879.916-3.667-.235-.376A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Aula grátis
+      </a>
+    </div>
+    <button class="nav-ham" id="navHam" onclick="toggleNav()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="nav-drawer" id="navDrawer">
+    <a href="#como" onclick="toggleNav()">Como funciona</a>
+    <a href="#quiz" onclick="toggleNav()">Quiz de nível</a>
+    <a href="#planos" onclick="toggleNav()">Planos</a>
+    <a href="#contato" onclick="toggleNav()">Agendar aula grátis 🎓</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+
+    <div class="hero-text">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Aulas Online ao Vivo · Individuais
+      </div>
+      <h1>
+        Aprenda inglês<br>
+        <em>de verdade.</em>
+      </h1>
+      <p class="hero-desc">Do zero à fluência — aulas particulares ao vivo com Teacher Gabriel Ramos. 10 meses de experiência, mais de 50 alunos em vários estados do Brasil.</p>
+      <div class="hero-ctas">
+        <a href="#contato" class="btn-grad">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.108.549 4.089 1.508 5.814L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 01-5.012-1.374l-.36-.214-3.762.879.916-3.667-.235-.376A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Agendar aula experimental gratuita
+        </a>
+        <a href="#quiz" class="btn-outline-hero">Descobrir meu nível →</a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          +50 alunos
+        </div>
+        <span class="trust-dot">·</span>
+        <div class="trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          +10 estados
+        </div>
+        <span class="trust-dot">·</span>
+        <div class="trust-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          10 meses ensinando
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-glow"></div>
+
+      <div class="hcard hcard-main">
+        <div class="hcard-header">
+          <svg width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg" style="border-radius:3px;flex-shrink:0">
+            <rect width="38" height="26" fill="#B22234"/>
+            <rect y="2" width="38" height="2" fill="white"/>
+            <rect y="6" width="38" height="2" fill="white"/>
+            <rect y="10" width="38" height="2" fill="white"/>
+            <rect y="14" width="38" height="2" fill="white"/>
+            <rect y="18" width="38" height="2" fill="white"/>
+            <rect y="22" width="38" height="2" fill="white"/>
+            <rect width="16" height="14" fill="#3C3B6E"/>
+            <text x="1" y="5" fill="white" font-size="3" font-family="Arial">★ ★ ★ ★ ★ ★</text>
+            <text x="2.5" y="8.5" fill="white" font-size="3" font-family="Arial">★ ★ ★ ★ ★</text>
+            <text x="1" y="12" fill="white" font-size="3" font-family="Arial">★ ★ ★ ★ ★ ★</text>
+          </svg>
+          <div>
+            <p class="hcard-lang">English</p>
+            <p class="hcard-exp">10 meses de experiência</p>
+          </div>
+          <div class="hcard-live-tag">
+            <span class="live-dot"></span> AO VIVO
+          </div>
+        </div>
+        <p class="hcard-quote">"The secret to learning a language is to never be afraid of making mistakes."</p>
+        <div class="hcard-author">
+          <div class="avatar">GR</div>
+          <div>
+            <strong>Teacher Gabriel Ramos</strong>
+            <span>English Teacher</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hcard hcard-stats">
+        <div class="stat-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span class="stat-num">+50</span>
+          <span class="stat-label">Alunos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="stat-num">+10</span>
+          <span class="stat-label">Estados</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span class="stat-num">10</span>
+          <span class="stat-label">Meses</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    scroll
+  </div>
+</section>
+
+<section class="sec sec-alt" id="como">
+  <div class="sec-inner">
+    <span class="sec-tag reveal">Como funciona</span>
+    <h2 class="reveal">3 passos para <em>começar</em></h2>
+    <p class="sec-sub reveal">Sem complicação. Do quiz ao inglês fluente em 3 etapas simples.</p>
+    <div class="steps">
+      <div class="step-card reveal reveal-d1">
+        <div class="step-ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        </div>
+        <span class="step-n">01</span>
+        <h3>Faça o quiz de nível</h3>
+        <p>Responda perguntas práticas — situações reais do dia a dia — e descubra seu nível em 2 minutos.</p>
+      </div>
+      <div class="step-card reveal reveal-d2">
+        <div class="step-ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <span class="step-n">02</span>
+        <h3>Agende a aula grátis</h3>
+        <p>Me chame no WhatsApp com seu resultado. Marcamos uma aula experimental gratuita, sem compromisso.</p>
+      </div>
+      <div class="step-card reveal reveal-d3">
+        <div class="step-ico">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <span class="step-n">03</span>
+        <h3>Evolua de verdade</h3>
+        <p>Aulas personalizadas no seu ritmo. Material didático, atividades para praticar e suporte pelo WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="sec" id="quiz">
+  <div class="sec-inner">
+    <span class="sec-tag reveal">Quiz de nível</span>
+    <h2 class="reveal">Qual é o seu <em>nível?</em></h2>
+    <p class="sec-sub reveal">Situações reais, perguntas práticas. Descubra em minutos e receba a recomendação certa para você.</p>
+    <div class="quiz-wrap reveal">
+      <div class="qbox" id="quizBox"></div>
+      <div class="q-result" id="quizResult" style="display:none"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section class="sec sec-alt" id="planos">
+  <div class="sec-inner">
+    <span class="sec-tag reveal">Investimento</span>
+    <h2 class="reveal">Escolha seu <em>plano</em></h2>
+    <p class="sec-sub reveal">Material incluso, aulas individuais online e atividades para casa em todos os planos.</p>
+    <div class="plans-grid">
+
+      <div class="pcard reveal reveal-d1">
+        <div class="p-ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <span class="p-freq">1x por semana</span>
+        <div class="p-price">R$ <strong>149</strong><span>/mês</span></div>
+        <ul class="p-feats">
+          <li>1 hora de aula semanal</li>
+          <li>Aula individual online ao vivo</li>
+          <li>Material didático incluso</li>
+          <li>Atividades para casa</li>
+        </ul>
+        <a href="https://wa.me/5583988234853?text=Olá%20Gabriel!%20Tenho%20interesse%20no%20plano%201x%20por%20semana." target="_blank" class="p-btn">Quero esse plano</a>
+      </div>
+
+      <div class="pcard pcard-hot reveal reveal-d2">
+        <div class="p-badge">⭐ Mais popular</div>
+        <div class="p-ico p-ico-hot">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <span class="p-freq">2x por semana</span>
+        <div class="p-price">R$ <strong>249</strong><span>/mês</span></div>
+        <ul class="p-feats">
+          <li>2 horas de aula semanal</li>
+          <li>Aula individual online ao vivo</li>
+          <li>Material didático incluso</li>
+          <li>Atividades para casa</li>
+        </ul>
+        <a href="https://wa.me/5583988234853?text=Olá%20Gabriel!%20Tenho%20interesse%20no%20plano%202x%20por%20semana." target="_blank" class="p-btn p-btn-hot">Quero esse plano</a>
+      </div>
+
+      <div class="pcard reveal reveal-d3">
+        <div class="p-ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <span class="p-freq">3x por semana</span>
+        <div class="p-price">R$ <strong>319</strong><span>/mês</span></div>
+        <ul class="p-feats">
+          <li>3 horas de aula semanal</li>
+          <li>Aula individual online ao vivo</li>
+          <li>Material didático incluso</li>
+          <li>Atividades para casa</li>
+        </ul>
+        <a href="https://wa.me/5583988234853?text=Olá%20Gabriel!%20Tenho%20interesse%20no%20plano%203x%20por%20semana." target="_blank" class="p-btn">Quero esse plano</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact-sec" id="contato">
+  <div class="sec-inner">
+    <span class="sec-tag reveal" style="display:table;margin:0 auto 14px">Vamos começar?</span>
+    <h2 class="reveal" style="text-align:center">Sua primeira aula é <em>gratuita</em></h2>
+    <p class="sec-sub reveal" style="text-align:center;margin:0 auto 44px">Sem compromisso. Me chame no WhatsApp e marcamos um horário. Respondo em até 1 hora!</p>
+    <div class="contact-actions reveal">
+      <a href="https://wa.me/5583988234853?text=Olá%20Gabriel!%20Quero%20agendar%20minha%20aula%20experimental%20gratuita." target="_blank" class="btn-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.108.549 4.089 1.508 5.814L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 01-5.012-1.374l-.36-.214-3.762.879.916-3.667-.235-.376A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        (83) 98823-4853
+      </a>
+      <p class="contact-note">⏱ Resposta em até 1 hora · Aula grátis sem compromisso</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <p>© 2026 Teacher Gabriel Ramos · Todos os direitos reservados</p>
+    <p class="footer-dev">
+      Desenvolvido por
+      <a href="https://www.linkedin.com/in/gabrielramosdev" target="_blank" class="footer-linkedin">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        Gabriel Ramos
+      </a>
+    </p>
+  </div>
+</footer>
+<!-- FOOTER -->
+<script src="english.js"></script>
+</body>
+</html>
