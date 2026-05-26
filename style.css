@@ -374,27 +374,7 @@ body::before {
 
 .stat-divider { width:1px; height:36px; background:var(--rim2); }
 
-/* scroll hint */
-.scroll-hint {
-  position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
-  display:flex; flex-direction:column; align-items:center; gap:7px;
-  color:var(--txt3); font-size:10px; font-weight:600; letter-spacing:0.12em;
-  text-transform:uppercase; z-index:2;
-  animation:fadeUp 0.5s 0.9s ease both;
-}
 
-.scroll-mouse {
-  width:20px; height:32px; border-radius:10px;
-  border:2px solid var(--txt3);
-  display:flex; justify-content:center; padding-top:5px;
-}
-
-.scroll-wheel {
-  width:2px; height:7px; background:var(--txt3); border-radius:2px;
-  animation:scrollW 1.6s ease-in-out infinite;
-}
-
-@keyframes scrollW { 0%{transform:translateY(0);opacity:1} 100%{transform:translateY(9px);opacity:0} }
 
 /* SEÇÕES BASE */
 .sec { padding:100px 24px; position:relative; z-index:2; }
@@ -749,7 +729,7 @@ footer {
   .hero-visual { margin-top:16px; margin-bottom: 80px; }
   .steps { grid-template-columns:1fr; }
   .plans-grid { grid-template-columns:1fr; max-width:400px; margin:0 auto; }
-  .scroll-hint { bottom: 30px; }
+
 }
 
 @media (max-width:640px) {
@@ -768,14 +748,7 @@ footer {
   .btn-wa { font-size:14px; padding:16px 28px; }
   .hcard { max-width:100%; }
   .hero-visual { margin-bottom: 20px; }
-  .scroll-hint { 
-    position: relative; 
-    bottom: auto; 
-    left: auto; 
-    transform: none; 
-    margin: 40px auto 0; 
-    display: flex;
-  }
+
 }
 
 @media (max-width:380px) {
