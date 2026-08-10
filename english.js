@@ -1,12 +1,3 @@
-// cursor glow
-const glow = document.getElementById('cursorGlow');
-if (glow) {
-  document.addEventListener('mousemove', e => {
-    glow.style.left = e.clientX + 'px';
-    glow.style.top  = e.clientY + 'px';
-  });
-}
-
 // nav mobile 
 function toggleNav() {
   document.getElementById('navDrawer').classList.toggle('open');
