@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Teacher Gabriel Ramos — Aulas de Inglês</title>
+  <title>Gabriel English Academy — Aulas de Inglês</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+<body id="top">
 
 <!-- NAV BAR -->
 <nav class="nav">
   <div class="nav-inner">
-    <div class="nav-brand">
-      <span class="nav-brand-sup">Teacher</span>
-      <span class="nav-brand-name">Gabriel <em>Ramos</em></span>
-    </div>
+    <a href="#top" class="nav-brand">
+      <img src="logo-gea.png" alt="Gabriel English Academy" class="nav-logo">
+      <span class="nav-brand-text">
+        <span class="nav-brand-name">Gabriel <em>English</em> Academy</span>
+        <span class="nav-brand-sup">Unlocking the world</span>
+      </span>
+    </a>
     <div class="nav-links">
       <a href="#como">Como funciona</a>
       <a href="#quiz">Quiz de nível</a>
@@ -52,7 +55,7 @@
         Aprenda inglês<br>
         <em>de verdade.</em>
       </h1>
-      <p class="hero-desc">Do zero à fluência — aulas particulares ao vivo com Teacher Gabriel Ramos. 10 meses de experiência, mais de 50 alunos em vários estados do Brasil.</p>
+      <p class="hero-desc">Do zero à fluência — aulas particulares ao vivo com a Gabriel English Academy. 10 meses de experiência, mais de 50 alunos em vários estados do Brasil.</p>
       <div class="hero-ctas">
         <a href="#contato" class="btn-grad">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.108.549 4.089 1.508 5.814L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 01-5.012-1.374l-.36-.214-3.762.879.916-3.667-.235-.376A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
@@ -76,10 +79,10 @@
           10 meses ensinando
         </div>
         <span class="trust-dot">·</span>
-        <div class="trust-item">
+        <button type="button" class="trust-item trust-link" onclick="openCertModal()">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg>
-          Certificado ao concluir o curso
-        </div>
+          Certificado ao concluir · ver exemplo
+        </button>
       </div>
     </div>
 
@@ -100,7 +103,7 @@
           </svg>
           <div>
             <p class="hcard-lang">Writing practice</p>
-            <p class="hcard-exp">corrigido por Teacher Gabriel</p>
+            <p class="hcard-exp">corrigido pela GEA</p>
           </div>
           <div class="hcard-live-tag">
             <span class="live-dot"></span> AO VIVO
@@ -215,7 +218,7 @@
           <li>Aula individual online ao vivo</li>
           <li>Material didático incluso</li>
           <li>Atividades para casa</li>
-          <li>Certificado de conclusão</li>
+          <li>Certificado de conclusão <button type="button" class="li-link" onclick="openCertModal()">(ver exemplo)</button></li>
         </ul>
         <a href="https://wa.me/5583988234853?text=Olá%20Gabriel!%20Tenho%20interesse%20no%20plano%201x%20por%20semana." target="_blank" class="p-btn">Quero esse plano</a>
       </div>
@@ -232,7 +235,7 @@
           <li>Aula individual online ao vivo</li>
           <li>Material didático incluso</li>
           <li>Atividades para casa</li>
-          <li>Certificado de conclusão</li>
+          <li>Certificado de conclusão <button type="button" class="li-link" onclick="openCertModal()">(ver exemplo)</button></li>
         </ul>
         <a href="https://wa.me/5583988234853?text=Olá%20Gabriel!%20Tenho%20interesse%20no%20plano%202x%20por%20semana." target="_blank" class="p-btn p-btn-hot">Quero esse plano</a>
       </div>
@@ -248,7 +251,7 @@
           <li>Aula individual online ao vivo</li>
           <li>Material didático incluso</li>
           <li>Atividades para casa</li>
-          <li>Certificado de conclusão</li>
+          <li>Certificado de conclusão <button type="button" class="li-link" onclick="openCertModal()">(ver exemplo)</button></li>
         </ul>
         <a href="https://wa.me/5583988234853?text=Olá%20Gabriel!%20Tenho%20interesse%20no%20plano%203x%20por%20semana." target="_blank" class="p-btn">Quero esse plano</a>
       </div>
@@ -275,7 +278,7 @@
 
 <footer>
   <div class="footer-inner">
-    <p>© 2026 Teacher Gabriel Ramos · Todos os direitos reservados</p>
+    <p>© 2026 Gabriel English Academy · Todos os direitos reservados</p>
     <p class="footer-dev">
       Desenvolvido por
       <a href="https://www.linkedin.com/in/gabrielramosdev" target="_blank" class="footer-linkedin">
@@ -286,6 +289,17 @@
   </div>
 </footer>
 <!-- FOOTER -->
+
+<!-- CERTIFICATE PREVIEW MODAL -->
+<div class="cert-modal" id="certModal">
+  <div class="cert-modal-backdrop" onclick="closeCertModal()"></div>
+  <div class="cert-modal-box">
+    <button type="button" class="cert-modal-close" onclick="closeCertModal()" aria-label="Fechar">✕</button>
+    <img src="certificado-exemplo.jpg" alt="Exemplo do certificado de conclusão da Gabriel English Academy" class="cert-modal-img">
+    <p class="cert-modal-caption">É assim que fica o seu certificado ao concluir o curso — com seu nome, carga horária e nível CEFR.</p>
+  </div>
+</div>
+
 <script src="english.js"></script>
 </body>
 </html>

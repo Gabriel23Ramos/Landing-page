@@ -11,6 +11,25 @@ document.addEventListener('click', e => {
   }
 });
 
+// certificate preview modal
+function openCertModal() {
+  const modal = document.getElementById('certModal');
+  if (!modal) return;
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCertModal() {
+  const modal = document.getElementById('certModal');
+  if (!modal) return;
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeCertModal();
+});
+
 // scroll reveal
 const revealEls = document.querySelectorAll('.reveal');
 const observer  = new IntersectionObserver(entries => {
