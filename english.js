@@ -1,4 +1,4 @@
-// nav mobile 
+// nav mobile
 function toggleNav() {
   document.getElementById('navDrawer').classList.toggle('open');
 }
@@ -42,7 +42,7 @@ const observer  = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 revealEls.forEach(el => observer.observe(el));
 
-// QUIZ
+// quiz data + logic
 const questions = [
   {
     q: "Você está em um café em Nova York. O atendente pergunta: 'What can I get for you?' Como você responde?",
