@@ -15,15 +15,12 @@
 <nav class="nav">
   <div class="nav-inner">
     <a href="#top" class="nav-brand">
-      <img src="logo-gea.png" alt="Gabriel English Academy" class="nav-logo">
-      <span class="nav-brand-text">
-        <span class="nav-brand-name">Gabriel <em>English</em> Academy</span>
-        <span class="nav-brand-sup">Unlocking the world</span>
-      </span>
+      <img src="wordmark.png" alt="Gabriel English Academy — Unlocking the world" class="nav-wordmark">
     </a>
     <div class="nav-links">
       <a href="#como">Como funciona</a>
       <a href="#quiz">Quiz de nível</a>
+      <a href="#certificado">Certificado</a>
       <a href="#planos">Planos</a>
       <a href="#contato" class="nav-cta">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.108.549 4.089 1.508 5.814L0 24l6.335-1.482A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.795 9.795 0 01-5.012-1.374l-.36-.214-3.762.879.916-3.667-.235-.376A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
@@ -37,6 +34,7 @@
   <div class="nav-drawer" id="navDrawer">
     <a href="#como" onclick="toggleNav()">Como funciona</a>
     <a href="#quiz" onclick="toggleNav()">Quiz de nível</a>
+    <a href="#certificado" onclick="toggleNav()">Certificado</a>
     <a href="#planos" onclick="toggleNav()">Planos</a>
     <a href="#contato" onclick="toggleNav()">Agendar aula grátis 🎓</a>
   </div>
@@ -195,6 +193,39 @@
     <div class="quiz-wrap reveal">
       <div class="qbox" id="quizBox"></div>
       <div class="q-result" id="quizResult" style="display:none"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICADO -->
+<section class="sec sec-alt" id="certificado">
+  <div class="sec-inner">
+    <div class="cert-showcase">
+      <div class="cert-text reveal">
+        <span class="sec-tag">Certificação</span>
+        <h2>Um certificado <em>de verdade</em> no final.</h2>
+        <p class="sec-sub" style="margin-bottom:26px">Ao concluir o curso, você recebe um certificado oficial da Gabriel English Academy — com carga horária, nível no Quadro Europeu (CEFR) e assinatura do professor. Documento real, que você pode colocar no currículo ou no LinkedIn.</p>
+        <ul class="cert-list">
+          <li><strong>60 horas</strong> de carga horária certificada</li>
+          <li>Nível avaliado no padrão <strong>CEFR</strong> (A1 ao C1)</li>
+          <li>Assinado pelo professor, com <strong>ID de verificação</strong> único</li>
+        </ul>
+        <button type="button" class="btn-grad" onclick="openCertModal()">
+          Ver certificado em tamanho grande
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+        </button>
+      </div>
+
+      <div class="cert-visual reveal reveal-d1">
+        <button type="button" class="cert-frame" onclick="openCertModal()" aria-label="Ver certificado em tamanho grande">
+          <img src="certificado-exemplo.jpg" alt="Exemplo do certificado de conclusão da Gabriel English Academy" class="cert-frame-img">
+          <span class="cert-frame-zoom">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+            Ampliar
+          </span>
+        </button>
+        <img src="wordmark-seal.png" alt="Selo Gabriel English Academy" class="cert-seal">
+      </div>
     </div>
   </div>
 </section>
